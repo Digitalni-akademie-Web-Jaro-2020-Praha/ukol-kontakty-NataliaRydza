@@ -17,7 +17,6 @@ body {
 
 body {
   text-align: center;
-  max-width: 540px;
 }
 
 .first,
@@ -32,4 +31,18 @@ body {
 
 img {
   border-radius: 50%;
+}
+
+@media screen and (min-width: 540px) and (max-width: 960px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  /* .first,
+  .second,
+  .third,
+  .fourth {
+    width: 40%;
+  } */
 }
