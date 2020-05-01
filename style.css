@@ -22,7 +22,7 @@ body {
 .team > div {
   border: 2px #eef3f3 solid;
   border-radius: 10px;
-  margin: 15px;
+  margin: 10px;
   padding: 20px;
 }
 
@@ -37,12 +37,21 @@ img {
     justify-content: space-evenly;
   }
   .team > div {
-    width: calc(50% - 30px);
-    margin: 1em;
+    width: calc(50% - 20px);
     display: flex;
     text-align: start;
   }
   .description {
     padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .team {
+    display: flex;
+  }
+
+  .team > div {
+    width: calc(25% - 20px);
   }
 }
