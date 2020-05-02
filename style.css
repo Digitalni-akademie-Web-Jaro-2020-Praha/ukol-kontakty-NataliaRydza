@@ -19,11 +19,17 @@ body {
   text-align: center;
 }
 
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .team > div {
   border: 2px #eef3f3 solid;
   border-radius: 10px;
   margin: 10px;
-  padding: 20px;
+  padding: 15px;
 }
 
 img {
@@ -32,23 +38,28 @@ img {
 
 @media screen and (min-width: 540px) and (max-width: 960px) {
   .team {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
   }
+
   .team > div {
     width: calc(50% - 20px);
     display: flex;
     text-align: start;
   }
-  .description {
-    padding-left: 20px;
+
+  .team .photo {
+    padding-right: 20px;
+  }
+
+  .team img {
+    width: 80px;
   }
 }
 
 @media screen and (min-width: 961px) {
   .team {
-    display: flex;
+    flex-direction: row;
   }
 
   .team > div {
